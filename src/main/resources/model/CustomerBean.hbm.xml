@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2012/3/7 ?W?? 09:15:15 by Hibernate Tools 3.3.0.GA -->
+<hibernate-mapping>
+    <class name="model.CustomerBean" table="CUSTOMER">
+        <id name="custid" type="string">
+            <column name="CUSTID" />
+            <generator class="assigned" />
+        </id>
+        <property name="password" type="binary">
+            <column name="password" />
+        </property>
+        
+        <property name="email" type="string">
+            <column name="EMAIL" />
+        </property>
+        <property name="birth" type="date">
+            <column name="BIRTH" />
+        </property>
+    </class>
+</hibernate-mapping>
